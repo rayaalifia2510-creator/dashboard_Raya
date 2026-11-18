@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <header>
+            <h1>Royal Dashboard</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari Ke Dokument Aktif...">
+            </div>
+        </header>
+
+        <nav>
+            <a href="#" class="nav-item active" data-page="home">Home</a>
+            <a href="#" class="nav-item" data-page="mahasiswa">Mahasiswa</a>
+            <a href="#" class="nav-item" data-page="kelas">Kelas</a>
+            <a href="#" class="nav-item" data-page="aktifitas">Aktifitas</a>
+            <a href="#" class="nav-item" data-page="statistik">Statistik</a>
+            <a href="#" class="nav-item" data-page="dokumen">Dokumen</a>
+            <a href="#" class="nav-item" data-page="settings">Settings</a>
+            <a href="#" class="sign-out" id="btnSignOut">Sign Out</a>
+        </nav>
+
+        
+        <main>
+            <div class="welcome-banner">
+                <div class="welcome-text">
+                    <h2>Selamat Datang, Alifia<br>Kelas SI-3E</h2>
+                    <p>Kamu memiliki Statistik, 3 Progres Kelas, 4 Aktifitas Selanjutnya dan 3 Lampiran Dokumen yang ada pada aplikasi ini.</p>
+                </div>
+                <div class="profile-img">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mahasiswa" alt="Foto Profil">
+                </div>
+            </div>
+
+            <div id="page-home" class="page-content active">
+                <div class="content-grid">
+                    <aside>
+                        <h3>Statistik Mahasiswa</h3>
+                        <div class="chart-container">
+                            <div class="chart">
+                                <div class="bar-group"><div class="bar" style="height: 45%;"></div><span>Dosen A</span></div>
+                                <div class="bar-group"><div class="bar" style="height: 35%;"></div><span>Dosen B</span></div>
+                                <div class="bar-group"><div class="bar" style="height: 65%;"></div><span>Dosen C</span></div>
+                                <div class="bar-group"><div class="bar" style="height: 30%;"></div><span>Dosen D</span></div>
+                                <div class="bar-group"><div class="bar" style="height: 80%;"></div><span>Dosen E</span></div>
+                            </div>
+                        </div>
+                    </aside>
+
+                   
+                    <section class="section-1">
+                        <h3>Progres Kelas</h3>
+                        <div class="card-list">
+                            <div class="card-item"><h4>Matakuliah A</h4><p>78 Pendaftar</p></div>
+                            <div class="card-item"><h4>Matakuliah B</h4><p>30 Pendaftar</p></div>
+                            <div class="card-item"><h4>Matakuliah C</h4><p>40 Pendaftar</p></div>
+                            <div class="card-item"><h4>Matakuliah D</h4><p>10 Pendaftar</p></div>
+                        </div>
+                    </section>
+
+                    
+                    <section class="section-2">
+                        <h3>Aktifitas Selanjutnya</h3>
+                        <div class="card-list">
+                            <div class="card-item"><h4>Perkuliahan Daring 1</h4><p>Senin, 15 Januari 2025</p></div>
+                            <div class="card-item"><h4>Perkuliahan Daring 1</h4><p>Selasa, 15 Februari 2025</p></div>
+                            <div class="card-item"><h4>Perkuliahan Daring 1</h4><p>Rabu, 15 Maret 2025</p></div>
+                            <div class="card-item"><h4>Perkuliahan Daring 1</h4><p>Kamis, 15 April 2025</p></div>
+                        </div>
+                    </section>
+                </div>
+
+                
+                <footer>
+                    <h3>Lampiran</h3>
+                    <div class="footer-list">
+                        <div class="footer-item">
+                            <span>Lampiran Dokumen 1 - Matakuliah A | Tugas Bersama Perkuliahan Daring</span>
+                            <a href="#">Lihat Dokumen</a>
+                        </div>
+                        <div class="footer-item">
+                            <span>Lampiran Dokumen 2 - Matakuliah B | Tugas Bersama Perkuliahan Daring</span>
+                            <a href="#">Lihat Dokumen</a>
+                        </div>
+                        <div class="footer-item">
+                            <span>Lampiran Dokumen 3 - Matakuliah C | Tugas Bersama Perkuliahan Daring</span>
+                            <a href="#">Lihat Dokumen</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        
+            <div id="page-mahasiswa" class="page-content">
+                <div class="page-card">
+                    <h3>Data Mahasiswa</h3>
+                    <p>Informasi detail data mahasiswa kelas SI-3E.</p>
+                    <table class="custom-table">
+                        <thead>
+                            <tr><th>NIM</th><th>Nama</th><th>Kelas</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>20230001</td><td>Syalsa Nabila</td><td>SI-3E</td><td>Aktif</td></tr>
+                            <tr><td>20230002</td><td>Alifia</td><td>SI-3E</td><td>Aktif</td></tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div id="page-kelas" class="page-content">
+                <div class="page-card">
+                    <h3>Daftar Kelas & Mata Kuliah</h3>
+                    <div class="card-list">
+                        <div class="card-item"><h4>Matakuliah A - Pemrograman Web</h4><p>Dosen: Dr. Supriadi | Total 78 Mahasiswa</p></div>
+                        <div class="card-item"><h4>Matakuliah B - Basis Data</h4><p>Dosen: Rahmad M.Kom | Total 30 Mahasiswa</p></div>
+                        <div class="card-item"><h4>Matakuliah C - Desain Web Lanjutan</h4><p>Dosen: Tri Utami M.Kom | Total 40 Mahasiswa</p></div>
+                        <div class="card-item"><h4>Matakuliah D - Analisis Sistem</h4><p>Dosen: Hendra M.T | Total 10 Mahasiswa</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-aktifitas" class="page-content">
+                <div class="page-card">
+                    <h3>Jadwal Aktifitas Kuliah</h3>
+                    <div class="card-list">
+                        <div class="card-item"><h4>Perkuliahan Daring 1 - Matakuliah A</h4><p>Senin, 15 Januari 2025 (08:00 - 10:30 WIB)</p></div>
+                        <div class="card-item"><h4>Perkuliahan Daring 1 - Matakuliah B</h4><p>Selasa, 15 Februari 2025 (10:30 - 13:00 WIB)</p></div>
+                        <div class="card-item"><h4>Perkuliahan Daring 1 - Matakuliah C</h4><p>Rabu, 15 Maret 2025 (13:30 - 16:00 WIB)</p></div>
+                        <div class="card-item"><h4>Perkuliahan Daring 1 - Matakuliah D</h4><p>Kamis, 15 April 2025 (08:00 - 10:30 WIB)</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-statistik" class="page-content">
+                <div class="page-card">
+                    <h3>Statistik & Grafik Nilai</h3>
+                    <div class="chart-container" style="height: 300px;">
+                        <div class="chart">
+                            <div class="bar-group"><div class="bar" style="height: 85%;"></div><span>Matakuliah A</span></div>
+                            <div class="bar-group"><div class="bar" style="height: 70%;"></div><span>Matakuliah B</span></div>
+                            <div class="bar-group"><div class="bar" style="height: 90%;"></div><span>Matakuliah C</span></div>
+                            <div class="bar-group"><div class="bar" style="height: 60%;"></div><span>Matakuliah D</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-dokumen" class="page-content">
+                <div class="page-card">
+                    <h3>Arsip Dokumen</h3>
+                    <div class="footer-list">
+                        <div class="footer-item"><span>Lampiran Dokumen 1 - Matakuliah A | Tugas Bersama Perkuliahan Daring</span><a href="#">Lihat Dokumen</a></div>
+                        <div class="footer-item"><span>Lampiran Dokumen 2 - Matakuliah B | Tugas Bersama Perkuliahan Daring</span><a href="#">Lihat Dokumen</a></div>
+                        <div class="footer-item"><span>Lampiran Dokumen 3 - Matakuliah C | Tugas Bersama Perkuliahan Daring</span><a href="#">Lihat Dokumen</a></div>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div id="page-settings" class="page-content">
+                <div class="page-card">
+                    <h3>Pengaturan Akun</h3>
+                    <form class="settings-form" onsubmit="event.preventDefault(); alert('Pengaturan Berhasil Disimpan!');">
+                        <label>Nama Mahasiswa</label>
+                        <input type="text" value="Alifia">
+                        <label>Kelas:</label>
+                        <input type="text" value="SI-3E">
+                        <label>Email Status:</label>
+                        <input type="email" value="mahasiswa@royal.ac.id">
+                        <button type="submit">Simpan Perubahan</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
